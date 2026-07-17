@@ -7,7 +7,7 @@ const NotFoundPage: React.FC = () => {
 
   // Set page title
   useEffect(() => {
-    document.title = '页面未找到 - DSA';
+    document.title = '页面未找到 - 如意金股';
   }, []);
 
   return (
@@ -17,7 +17,7 @@ const NotFoundPage: React.FC = () => {
         <span 
           className="text-8xl font-bold text-transparent bg-clip-text"
           style={{
-            backgroundImage: 'linear-gradient(135deg, #00d4ff 0%, #a855f7 100%)',
+            backgroundImage: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
           }}
         >
           404
