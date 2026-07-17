@@ -1,0 +1,4 @@
+平台: OpenRouter
+模型: openai/gpt-oss-120b
+响应: None
+Token使用: 124

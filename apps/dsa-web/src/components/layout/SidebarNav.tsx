@@ -8,6 +8,7 @@ import { useUiLanguage } from '../../contexts/UiLanguageContext';
 import type { UiTextKey } from '../../i18n/uiText';
 import { cn } from '../../utils/cn';
 import { ConfirmDialog } from '../common/ConfirmDialog';
+import { BrandMark } from '../common/BrandMark';
 import { StatusDot } from '../common/StatusDot';
 import { UiLanguageToggle } from '../i18n/UiLanguageToggle';
 import { ThemeToggle } from '../theme/ThemeToggle';
@@ -106,10 +107,10 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({ collapsed = false, onNav
             isRail ? 'h-9 w-9 rounded-[1rem]' : 'h-10 w-10 rounded-2xl'
           )}
         >
-          <BarChart3 className={cn(isRail ? 'h-[19px] w-[19px]' : 'h-5 w-5')} />
+          <BrandMark variant="icon" size={isRail ? 22 : 24} className="rounded-[inherit]" />
         </div>
         {!collapsed ? (
-          <p className={cn('min-w-0 truncate font-semibold text-foreground', isRail ? 'text-[0.95rem] leading-none' : 'text-sm')}>DSA</p>
+          <p className={cn('min-w-0 truncate font-semibold text-foreground', isRail ? 'text-[0.95rem] leading-none' : 'text-sm')}>如意金股</p>
         ) : null}
       </div>
 

@@ -501,8 +501,8 @@ class SystemConfigService:
         channel: str,
         items: Sequence[Dict[str, str]],
         mask_token: str = "******",
-        title: str = "DSA 通知测试",
-        content: str = "这是一条来自 DSA Web 设置页的通知测试消息。",
+        title: str = "如意金股 通知测试",
+        content: str = "这是一条来自 如意金股 设置页的通知测试消息。",
         timeout_seconds: float = 20.0,
     ) -> Dict[str, Any]:
         """Send one real notification test without persisting submitted values."""

@@ -1045,7 +1045,7 @@ describe('StockScreeningPage', () => {
           name: '贵州茅台',
           score: 91.2,
           reason: 'AlphaSift pick',
-          dsaAnalysisSummary: 'DSA行情：现价 1688，涨跌幅 1.2%；DSA新闻：贵州茅台最新公告',
+          dsaAnalysisSummary: '如意金股行情：现价 1688，涨跌幅 1.2%；如意金股新闻：贵州茅台最新公告',
           dsaNews: [{ title: '贵州茅台最新公告', source: '测试源' }],
           dsaContext: {
             enriched: true,
@@ -1067,13 +1067,13 @@ describe('StockScreeningPage', () => {
     expect(await screen.findByText('选股已开启')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /运行选股/ }));
 
-    expect(await screen.findByText('DSA增强：1 / 1')).toBeInTheDocument();
+    expect(await screen.findByText('如意金股增强：1 / 1')).toBeInTheDocument();
 
-    expect(screen.getByText('DSA 增强摘要')).toBeInTheDocument();
-    expect(screen.getByText(/DSA行情：现价 1688/)).toBeInTheDocument();
-    expect(screen.getByText('DSA 新闻')).toBeInTheDocument();
+    expect(screen.getByText('如意金股 增强摘要')).toBeInTheDocument();
+    expect(screen.getByText(/如意金股行情：现价 1688/)).toBeInTheDocument();
+    expect(screen.getByText('如意金股 新闻')).toBeInTheDocument();
     expect(screen.getByText('贵州茅台最新公告')).toBeInTheDocument();
-    expect(screen.getByText('DSA 增强提示')).toBeInTheDocument();
+    expect(screen.getByText('如意金股 增强提示')).toBeInTheDocument();
     expect(screen.getByText('stock_news_unavailable')).toBeInTheDocument();
   });
 });

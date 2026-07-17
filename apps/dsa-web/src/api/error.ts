@@ -346,7 +346,7 @@ export function parseApiError(error: unknown): ParsedApiError {
   if (errorCode === 'alphasift_install_failed') {
     return createParsedApiError({
       title: 'AlphaSift 修复安装失败',
-      message: 'DSA 已尝试修复安装 AlphaSift，但 pip 安装未成功。请检查 ALPHASIFT_INSTALL_SPEC、网络代理或后端 Python 环境。',
+      message: '如意金股 已尝试修复安装 AlphaSift，但 pip 安装未成功。请检查 ALPHASIFT_INSTALL_SPEC、网络代理或后端 Python 环境。',
       rawMessage,
       status,
       category: 'http_error',

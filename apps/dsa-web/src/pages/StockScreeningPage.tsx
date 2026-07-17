@@ -1267,7 +1267,7 @@ const StockScreeningPage: React.FC = () => {
               {screenMeta?.llmCoverage != null ? ` · 覆盖 ${formatPercent(screenMeta.llmCoverage)}` : ''}
             </span>
             <span>
-              DSA增强：{screenMeta?.dsaEnrichment?.enrichedCount ?? '-'} / {screenMeta?.dsaEnrichment?.requestedCount ?? '-'}
+              如意金股增强：{screenMeta?.dsaEnrichment?.enrichedCount ?? '-'} / {screenMeta?.dsaEnrichment?.requestedCount ?? '-'}
             </span>
           </div>
         </div>
@@ -1369,7 +1369,7 @@ const StockScreeningPage: React.FC = () => {
                                 </div>
                                 {item.dsaAnalysisSummary ? (
                                   <div>
-                                    <p className="text-xs font-semibold text-secondary-text">DSA 增强摘要</p>
+                                    <p className="text-xs font-semibold text-secondary-text">如意金股 增强摘要</p>
                                     <p className="mt-1 text-sm leading-6 text-foreground">{item.dsaAnalysisSummary}</p>
                                   </div>
                                 ) : null}
@@ -1428,7 +1428,7 @@ const StockScreeningPage: React.FC = () => {
                                   </p>
                                 </div>
                                 <div>
-                                  <p className="text-xs font-semibold text-secondary-text">DSA 新闻</p>
+                                  <p className="text-xs font-semibold text-secondary-text">如意金股 新闻</p>
                                   {dsaNews.length > 0 ? (
                                     <ul className="mt-1 space-y-1 text-sm text-foreground">
                                       {dsaNews.slice(0, 3).map((newsItem, newsIndex) => (
@@ -1443,7 +1443,7 @@ const StockScreeningPage: React.FC = () => {
                                 </div>
                                 {dsaWarnings.length > 0 ? (
                                   <div>
-                                    <p className="text-xs font-semibold text-secondary-text">DSA 增强提示</p>
+                                    <p className="text-xs font-semibold text-secondary-text">如意金股 增强提示</p>
                                     <p className="mt-1 text-sm text-secondary-text">{dsaWarnings.join('，')}</p>
                                   </div>
                                 ) : null}
