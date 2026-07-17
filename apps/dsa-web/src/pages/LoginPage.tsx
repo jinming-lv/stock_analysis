@@ -10,6 +10,7 @@ import { isParsedApiError } from '../api/error';
 import { useAuth } from '../hooks';
 import { useUiLanguage } from '../contexts/UiLanguageContext';
 import { SettingsAlert } from '../components/settings';
+import { BrandMark } from '../components/common/BrandMark';
 
 const LoginPage: React.FC = () => {
   const { login, passwordSet, setupState } = useAuth();
@@ -122,7 +123,8 @@ const LoginPage: React.FC = () => {
           </motion.div>
 
           <div className="mt-8 flex flex-col items-center">
-            <h2 className="text-4xl font-extrabold tracking-tighter text-[var(--login-text-primary)] sm:text-6xl">
+            <BrandMark variant="full" size={56} className="drop-shadow-[0_8px_24px_rgba(139,92,246,0.35)]" />
+            <h2 className="mt-5 text-4xl font-extrabold tracking-tighter text-[var(--login-text-primary)] sm:text-6xl">
               <span className="bg-gradient-to-r from-[var(--login-text-primary)] via-[var(--login-text-primary)] to-[var(--login-text-secondary)] bg-clip-text text-transparent">如意金股</span>
             </h2>
             <h3 className="mt-1 text-xl font-bold uppercase tracking-[0.5em] text-[var(--login-text-muted)]">
